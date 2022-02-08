@@ -1,0 +1,29 @@
+#content, html, body {
+    height: 98%;
+    background-color: rgb(240, 234, 156);
+    font-family: 'Monoton', cursive;
+    font-family: 'Roboto', sans-serif;
+    color:tomato
+}
+#left {
+    float: left;
+    width: 45%;
+    background: red;
+    height: 50%;
+    overflow: scroll;
+    margin-top: 200px;
+    margin-bottom: 25px;
+    margin-left: 10%;
+    margin-right: 25px
+}
+#right {
+    float: left;
+    width: 45%;
+    background: blue;
+    height: 50%;
+    overflow: scroll;
+    margin-top: 25px;
+    margin-bottom: 200px;
+    margin-left: 40%;
+    margin-right: 50px
+}
