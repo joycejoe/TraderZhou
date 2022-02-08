@@ -8,7 +8,7 @@
 #left {
     float: left;
     width: 45%;
-    background: red;
+    background: rgb(59, 70, 92);
     height: 50%;
     overflow: scroll;
     margin-top: 200px;
@@ -19,7 +19,7 @@
 #right {
     float: left;
     width: 45%;
-    background: blue;
+    background: rgb(167, 187, 195);
     height: 50%;
     overflow: scroll;
     margin-top: 25px;
