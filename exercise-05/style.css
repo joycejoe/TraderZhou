@@ -17,11 +17,22 @@
     justify-content: space-between;
     align-items: center;
 }
-.header .LinaBoBardi{
-    transition: transform 0.7s;
+.header.LinaBoBardi {
+    transform: translate(-50%,-50%);
 }
-.header .LinaBoBardi:hover{
-    transform: rotate(360deg);
+.LinaBoBardi:hover{
+    animation: rotate 1s linear;
+}
+@keyframes LinaBoBardiRotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 .container {
     display: flex;
