@@ -17,12 +17,6 @@
     justify-content: space-between;
     align-items: center;
 }
-.header.LinaBoBardi {
-    transform: translate(-50%,-50%);
-}
-.LinaBoBardi:hover{
-    animation: rotate 1s linear;
-}
 @keyframes LinaBoBardiRotate{
     0%{
         transform: rotate(0deg);
@@ -33,6 +27,39 @@
     100%{
         transform: rotate(360deg);
     }
+}
+
+.LinaBoBardi {
+    text-align: center;
+    animation-timing-function: linear;
+    transform-origin: center center;
+    width: 12%;
+}
+.LinaBoBardi:hover{
+    transform: rotate(360deg);
+    animation: LinaBoBardiRotate 3s infinite;
+}
+@keyframes HouseRotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.HouseorMuseums {
+    text-align: center;
+    animation-timing-function: linear;
+    transform-origin: center center;
+    width: 12%;
+}
+.HouseorMuseums:hover{
+    transform: rotate(360deg);
+    animation: HouseRotate 3s infinite;
 }
 .container {
     display: flex;
