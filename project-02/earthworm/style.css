@@ -1,0 +1,25 @@
+#content, html, body {
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+.frame {
+ min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 15px;
+}
