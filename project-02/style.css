@@ -1,0 +1,45 @@
+#content, html, body {
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto Slab', serif;
+}
+ * {
+     margin: 0%;
+     padding: 0%;
+ }
+.container {
+    height: 487.5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    background-color: transparent;
+    perspective: 1000px;
+}
+.card {
+    position: relative;
+    width: 10%;
+    height: 10%;
+    text-align:center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.card:hover {
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-position: center center;
+    backface-visibility: hidden;
+    transition: transform 0.7s ease-in-out;
+}
+.Back,
+.Front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    backface-visibility: hidden;
+}
+.Front {
+    transform: rotateY(180deg);
+}
