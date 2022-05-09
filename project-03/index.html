@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car Quiz! Woohoo!</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <div class="parallax"></div>
+
+        <div id="navigation">
+            <ul>
+                <li><h4><a href="../index.html">Home</a></h4></li>
+                <li><h4><a href="#browse">Browse</a></h4></li>
+                <li><h4><a href="#main">Quiz</a></h4></li>
+            </ul>
+        </div>
+
+    </head>
+    <body>
+        <div class="bigwrap">
+            <section id="main">
+            <div id="header"><h1>What Car are You?</h1></div>
+            <br>
+            <br>
+            <link rel="stylesheet" href="style.css">
+            <form  id="form1">
+                
+                <p><h3>Favourite Taylor Swift Album?</h3></p>
+                <label><input type="radio" name="taylor" id="young" value="1" /><h5>1984</h5></label>
+                <label><input type="radio" name="taylor" id="mid" value="15" /><h5>Fearless</h5></label>
+                <label><input type="radio" name="taylor" id="old" value="3" /><h5>Lover</h5></label>
+                
+                <br>
+                <br>
+
+                <p><h3>What Hairstyle Would You Rock?</h3></p>
+                <label><input type="radio" name="hair" id="party" value="11" /><h5>Mullet</h5></label>
+                <label><input type="radio" name="hair" id="rock" value="5" /><h5>Baby Bangs</h5></label>
+                <label><input type="radio"  name="hair" id="beer" value="6" /><h5>The Beehive</h5></label>
+                
+                <br>
+                <br>
+
+                <p><h3>Utensil of Choice?</h3></p>
+                <label><input type="radio" name="util" id="rock2" value="7" /><h5>Chopstick</h5></label>
+                <label><input type="radio" name="util" id="indie" value="18" /><h5>Fingers</h5></label>
+                <label><input type="radio" name="util" id="country" value="1" /><h5>Ladle</h5></label>
+                
+                <br>
+                <br>
+
+                <p><h3>Favourite Gatorade Flavour?</h3></p>
+                <label><input type="radio" name="drink" id="a1" value="4" /><h5>Cool Blue</h5></label>
+                <label><input type="radio" name="drink" id="a2" value="1" /><h5>Fruit Punch</h5></label>
+                <label><input type="radio" name="drink" id="a3" value="12" /><h5>Frost Glacier Cherry</h5></label>
+                
+                <br>
+                <br>
+
+                <p><h3>Medieval Weapon of Choice?</h3></p>
+                <label><input type="radio" name="weapon" id="a4" value="2" /><h5>Halberd</h5></label>
+                <label><input type="radio" name="weapon" id="a5" value="4" /><h5>English Longbow</h5></label>
+                <label><input type="radio" name="weapon" id="a6" value="3" /><h5>Trebuchet</h5></label>
+                
+                <br>
+                <br>
+
+                <p><h3>Who Would Win in a Fight?</h3></p>
+                <label><input type="radio" name="fight" id="a7" value="1" /><h5>Peter Dinklage</h5></label>
+                <label><input type="radio" name="fight" id="a8" value="17" /><h5>Olivia Rodrigo</h5></label>
+                <label><input type="radio" name="fight" id="a9" value="6" /><h5>Guy Fieri</h5></label>
+                
+                <br>
+                <br>
+                <br>
+                <div>
+                    <button onclick="myFunction()">Click Me</button>
+                </div>
+                <br>
+                <br>
+                <br>
+        
+                <img src="https://bit.ly/3LVisFR" id="car1" class="hidden w-100" width="500" height="350">
+                <p id="answer"></p>
+                <script src="script.js"></script>
+            </section>
+            
+            <section id="Browse">
+                <div class="container">
+                    <div class="filters">
+                      <h2>Filter Us!</h2>
+                      <button class="filter-btn" data-filter="sporty">Sporty</button>
+                      <button class="filter-btn" data-filter="novel">Novel</button>
+                      <button class="filter-btn" data-filter="work">Work</button>
+                      <button class="filter-btn" data-filter="compact">Compact</button>
+                      <button class="filter-btn active" data-filter="all">All</button>
+                    </div>
+                    <div class="list">
+                      <h2>Cars</h2>
+                      <ul></ul>
+                    </div>
+                  </div>
+            </section>
+        </div>
+        </body>
+    </html>
+
